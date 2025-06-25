@@ -7,7 +7,7 @@ export default {
         sped: {
           primary: '#2C3E50',
           accent: '#3498DB',
-          highlight: '#074359',
+          highlight: '#055f82',
           mint: '#A3E4D7',
           gray: '#7F8C8D',
           light: '#f4f9f8',

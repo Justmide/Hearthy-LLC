@@ -7,7 +7,7 @@ const Quote = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="sticky top-0 w-full text-center bg-[#cce4ed] text-white text-sm md:text-base py-2 px-4 z-[60] shadow-md"
+      className="sticky top-0 w-full text-center bg-[#cce4ed] text-[#000000] text-sm md:text-base py-2 px-4 z-[60] shadow-md"
     >
       <p className="font-medium">Train. Transition. Travel. Celebrate.</p>
       <p className="font-light">We Grow Educators. We Celebrate People.</p>

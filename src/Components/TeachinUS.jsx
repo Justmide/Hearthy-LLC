@@ -51,10 +51,10 @@ const TeachinUS = () => {
 
                 <p className="text-text font-medium">Our services include:</p>
                 <ul className="list-disc list-inside text-text space-y-1">
-                  <li>✅ Understanding visa sponsorship options</li>
-                  <li>✅ Guidance on state-by-state teaching requirements</li>
-                  <li>✅ Credential evaluation and document preparation</li>
-                  <li>✅ Application assistance and interview prep</li>
+                  <li> Understanding visa sponsorship options</li>
+                  <li> Guidance on state-by-state teaching requirements</li>
+                  <li> Credential evaluation and document preparation</li>
+                  <li> Application assistance and interview prep</li>
                 </ul>
 
                 <p className="text-text mt-4">

@@ -10,7 +10,11 @@ import AboutUsPage from './Pages/AboutUsPage';
 import Footer from './Components/Footer';
 import OurServicePage from './Pages/OurServicePage';
 import PageWrapper from './Components/PageWrapper';
+import TrainingPage from './Pages/TrainingPage';
+import ContactUs from './Pages/ContactUs';
+import { FormProvider } from './Context/FormContext';
 
+// https://formspree.io/f/mnnvojly
 
 const App = () => {
   useEffect(() => {
@@ -18,37 +22,59 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-sans"> 
+    <div className="font-sans min-h-screen flex flex-col justify-between bg-[#f4f9f8]"> 
       <BrowserRouter>
-        <Quote />
-        <Navbar />
-        <Routes>
-          <Route 
-            path="/" 
-            element={
-              <PageWrapper>
-                <HomePage />
-              </PageWrapper>
-            } 
-          />
-          <Route 
-            path="/about" 
-            element={
-              <PageWrapper>
-                <AboutUsPage />
-              </PageWrapper>
-            } 
-          />
-          <Route 
-            path="/service" 
-            element={
-              <PageWrapper>
-                <OurServicePage />
-              </PageWrapper>
-            } 
-          />
-        </Routes>
-        <Footer />
+        <FormProvider>
+          <Quote />
+          <Navbar />
+          <div className="flex-1">
+            <Routes>
+              <Route 
+                path="/" 
+                element={
+                  <PageWrapper>
+                    <HomePage />
+                  </PageWrapper>
+                } 
+              />
+              <Route 
+                path="/about" 
+                element={
+                  <PageWrapper>
+                    <AboutUsPage />
+                  </PageWrapper>
+                } 
+              />
+              <Route 
+                path="/service" 
+                element={
+                  <PageWrapper>
+                    <OurServicePage />
+                  </PageWrapper>
+                } 
+              />
+
+              <Route 
+              path='/training'
+              element={
+                <PageWrapper>
+                  <TrainingPage />
+                </PageWrapper>
+              }
+              />
+
+              <Route 
+              path='/contact'
+              element={
+                <PageWrapper>
+                  <ContactUs />
+                </PageWrapper>
+              }
+              />
+            </Routes>
+          </div>
+          <Footer />
+        </FormProvider>
       </BrowserRouter>
     </div>
   );

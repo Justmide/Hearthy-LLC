@@ -9,7 +9,7 @@ const ServiceDetails = () => {
   }
   return (
     <>
-      <section className="w-full p-2 py-10 flex flex-col px-5">
+      <section className="bg-[#f4f9f8] w-full p-2 py-10 flex flex-col px-5">
         <div>
           {/* Heading  */}
           <div className="text-[17px] lg:text-3xl font-heading text-primary mb-3"
@@ -165,13 +165,13 @@ const ServiceDetails = () => {
            {/* 2box  */}
            <div className="lg:flex-row md:flex-row flex flex-col gap-7 justify-center "
            data-aos="fade-down">
-             <div className="bg-[#F4F9F8] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
+             <div className="bg-[#cce4ed] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
               <h3 className="lg:text-xl text-[15px] font-bold text-gray-500 mb-2">Advocacy Services</h3>
               <p className="lg:text-[16px] text-[12px] font-heading text-primary">
                 Expert guidance through IEP processes, parent empowerment, and systemic advocacy for equitable education access.
               </p>
             </div>
-            <div className="bg-[#F4F9F8] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
+            <div className="bg-[#cce4ed] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
               <h3 className="lg:text-xl text-[15px] font-bold text-gray-500 mb-2">Comprehensive Assessments</h3>
                 <p className="lg:text-[16px] font-heading text-primary text-[12px]">
                 Multidisciplinary evaluations to identify learning needs and create targeted intervention plans.
@@ -188,12 +188,12 @@ const ServiceDetails = () => {
                 💬 Need Help?
               </p>
 
-              <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#F4F9F8]">
+              <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#cce4ed]">
                 <p className="lg:text-[16px] text-center text-[10px]"
                  data-aos="fade-down">If you believe your child may benefit from special education services, or you just have questions, we’re here for you. Reach out today for a confidential consultation with our support team
 </p>
               <button 
-              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-primary rounded-[7px] text-[14px] text-white bg-primary hover:bg-[#185035]"
+              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-primary rounded-[7px] text-[14px] text-white bg-primary"
               data-aos="fade-down"
               onClick={handleContactUs}>
                 Contact Us

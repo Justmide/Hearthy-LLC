@@ -13,7 +13,7 @@ const ServicesHero = () => {
           loading='lazy'
         />
         {/* Muted green overlay */}
-        <div className="absolute inset-0 bg-[#2C4E49]/60"></div> 
+        <div className="absolute inset-0 bg-[#2C4E49]/70"></div> 
       </div>
 
       <div className="relative z-10 text-center px-4 w-full max-w-5xl mx-auto">
@@ -30,8 +30,8 @@ const ServicesHero = () => {
 
         {/* headline */}
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl lg:text-3xl font-bold text-white mb-4 drop-shadow-lg">
-            <span className="text-[#E8F1F0]">Special Education</span> Support Services
+          <h1 className="text-2xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+            <span className="text-[#3498db]">Special Education</span> Support Services
           </h1>
           
           <p className="text-white/90 text-[15px] md:text-[23px] max-w-2xl mb-8 leading-relaxed">

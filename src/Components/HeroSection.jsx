@@ -148,7 +148,7 @@ export const CarouselDarkVariant = () => {
       {/* Navigation buttons */}
       <button
         type="button"
-        className="absolute top-1/2 left-3 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10"
+        className="absolute top-1/2 left-3 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-transparent"
         onClick={goToPrev}
       >
         <span className="text-white text-5xl">‹</span>
@@ -156,7 +156,7 @@ export const CarouselDarkVariant = () => {
       </button>
       <button
         type="button"
-        className="absolute top-1/2 right-3 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10"
+        className="absolute top-1/2 right-3 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-transparent"
         onClick={goToNext}
       >
         <span className="text-white text-5xl">›</span>
@@ -169,7 +169,7 @@ export const CarouselDarkVariant = () => {
           <button
             key={index}
             type="button"
-            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-white' : 'bg-white/30 hover:bg-white/50'}`}
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-white' : 'bg-white/30'}`}
             aria-current={index === currentSlide}
             aria-label={`Slide ${index + 1}`}
             onClick={() => goToSlide(index)}

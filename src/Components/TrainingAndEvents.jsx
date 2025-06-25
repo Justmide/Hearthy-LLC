@@ -5,12 +5,12 @@ import cruise from '../assets/Images/vacation.jpg';
 const TrainingAndEvents = () => {
   return (
     <>
-    <section className='bg-[#cce4ed]'>
-      <div className="w-full text-center lg:text-[40px] text-[25px] text-gray-800 font-bold pt-5 text-[#2c3e50]">
+    <section className='bg-[#cce4ed] text-[#000000]'>
+      <div className="w-full text-center lg:text-[40px] text-[25px] text-[#000000] font-bold pt-5">
         <p>Hearthy Training & Events</p>
       </div>
 
-      <div className="w-full bg-[#cce4ed] py-10 px-4 space-y-20">
+      <div className="w-full bg-[#cce4ed] py-10 px-4 space-y-20 text-[#000000]">
 
         {/* TRAINING SECTION */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
@@ -23,14 +23,14 @@ const TrainingAndEvents = () => {
             />
           </div>
 
-          <div className="pt-4 flex flex-col lg:justify-normal lg:items-start items-center justify-center">
-            <div className="text-sm pb-2 font-semibold border-b-4 border-primary w-fit lg:mx-0 text-gray-700">
+          <div className="pt-4 flex flex-col lg:justify-normal lg:items-start items-center justify-center text-[#000000]">
+            <div className="text-sm pb-2 font-semibold border-b-4 border-primary w-fit lg:mx-0 text-[#000000]">
               🧑🏾‍🏫 TRAINING & DEVELOPMENT
             </div>
-            <div className="pt-4 text-[20px] lg:text-[40px] font-bold leading-snug lg:text-left text-gray-900">
+            <div className="pt-4 text-[20px] lg:text-[40px] font-bold leading-snug lg:text-left text-[#000000]">
               <p>Empowering Educators & Families Through Training</p>
             </div>
-            <div className="text-[15px] text-gray-800 font-medium italic pt-4 lg:text-justify text-center">
+            <div className="text-[15px] text-[#000000] font-medium italic pt-4 lg:text-justify text-center">
               <p>
                 Whether you're an educator, parent, or student advocate, our workshops equip you with practical, inclusive skills to support learners with disabilities.
               </p>
@@ -49,19 +49,19 @@ const TrainingAndEvents = () => {
 
         {/* EVENTS SECTION */}
         <div className="flex flex-col-reverse lg:flex-row items-center gap-6 px-2 lg:px-1">
-          <div className="w-full lg:w-1/2 lg:justify-normal lg:items-start justify-center items-center flex flex-col">
-            <div className="lg:text-justify text-[16px] pb-2 font-semibold border-b-4 border-primary w-fit text-gray-800 mb-4">
+          <div className="w-full lg:w-1/2 lg:justify-normal lg:items-start justify-center items-center flex flex-col text-[#000000]">
+            <div className="lg:text-justify text-[16px] pb-2 font-semibold border-b-4 border-primary w-fit text-[#000000] mb-4">
               🛳️ EVENTS & VACATIONS
             </div>
-            <h2 className="text-[20px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-bold leading-snug text-gray-900">
+            <h2 className="text-[20px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-bold leading-snug text-[#000000]">
               Celebrate Life Beyond the Classroom
             </h2>
-            <div className="text-[15px] text-gray-700 font-medium italic pt-4 leading-relaxed lg:text-justify text-center">
+            <div className="text-[15px] text-[#000000] font-medium italic pt-4 leading-relaxed lg:text-justify text-center">
               <p>
                Educators and families deserve support and joy. That’s why we also plan vacations and events to inspire connection, celebration, and well-deserved rest.
               </p>
               <br />
-              <strong className="text-gray-800">Travel With Purpose</strong>
+              <strong className="text-[#000000]">Travel With Purpose</strong>
 <br />
 ✅ <strong>Cruise Adventures</strong> <br />
 ✅ <strong>Milestone Celebrations</strong> <br />

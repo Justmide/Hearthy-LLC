@@ -36,7 +36,7 @@ const AboutSection = () => {
         <div className="flex flex-col items-center"
               data-aos="fade-down">
           <h1 className="text-2xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            Empowering <span className="text-[#2C4E49]">Special Education</span> Through Excellence in Training
+            Empowering <span className="text-[#020202]">Special Education</span> Through Excellence in Training
           </h1>
           <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
             Transforming special education through comprehensive teacher training programs, 
@@ -45,7 +45,7 @@ const AboutSection = () => {
 
           {/* Action Buttons */}
           <div className="flex gap-4 flex-wrap justify-center">
-            <button className="bg-[#3A6351] hover:bg-[#4e816b] text-white px-6 py-4 rounded-full text-base font-medium transition-all duration-300 shadow-lg">
+            <button className="text-white px-6 py-4 rounded-full text-base font-medium transition-all duration-300 shadow-lg">
               Explore Training Programs
             </button>
             <button className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full text-base font-medium transition-all duration-300 backdrop-blur-sm border border-white/20">

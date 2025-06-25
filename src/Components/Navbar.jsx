@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Our Service', path: '/service' },
-    { name: 'Training & Events Page', path: '/training' },
+    { name: 'Training & Events', path: '/training' },
   ];
 
   const toggleMenu = () => {
@@ -65,7 +65,7 @@ const Navbar = () => {
         
         <button 
           onClick={handleGetStartedClick}
-          className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-[#224d38] transition-colors"
+          className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-[#055f82] transition-colors"
         >
           Contact Us
         </button>
@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="lg:hidden">
         <button 
           onClick={toggleMenu} 
-          className="text-3xl mt-4 text-gray-700 focus:outline-none"
+          className="text-3xl mt-4 text-gray-700 bg-transparent focus:outline-none"
           aria-label="Toggle menu"
         >
           {isOpen ? <FaTimes /> : <FaBars />}

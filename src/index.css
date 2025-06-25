@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   body {
     @apply bg-sped-mint text-sped-primary font-body;
   }
@@ -16,4 +16,4 @@
   .overlay {
     @apply bg-sped-primary bg-opacity-80;
   }
-} */
+}
