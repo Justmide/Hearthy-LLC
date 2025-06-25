@@ -103,7 +103,7 @@ export const CarouselDarkVariant = () => {
           <div 
             key={index}
             className="w-full flex-shrink-0 relative"
-            style={{ minHeight: '80vh' }} // Responsive height
+            style={{ minHeight: '70vh' }} // Responsive height
           >
             <img
               src={slide.image}
@@ -123,7 +123,7 @@ export const CarouselDarkVariant = () => {
                     className="bg-black/50 text-white flex justify-center items-center flex-col rounded-lg h-full w-full "
                   >
                     <motion.h5 
-                      className="text-2xl md:text-5xl font-bold mb-4 font-heading px-4"
+                      className="text-[15px] lg:text-[40px] md:text-[30px] sm:text-[20px] font-bold mb-4 font-heading px-4"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.2, duration: 0.5 }}
@@ -131,7 +131,7 @@ export const CarouselDarkVariant = () => {
                       {slide.title}
                     </motion.h5>
                     <motion.p 
-                      className="text-sm md:text-lg mb-4 lg:px-[170px] px-[30px]"
+                      className="text-[15px] lg:text-lg mb-4 lg:px-[170px] px-[30px]"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.4, duration: 0.5 }}

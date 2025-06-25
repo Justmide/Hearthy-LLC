@@ -14,7 +14,7 @@ import TrainingPage from './Pages/TrainingPage';
 import ContactUs from './Pages/ContactUs';
 import { FormProvider } from './Context/FormContext';
 
-// https://formspree.io/f/mnnvojly
+
 
 const App = () => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-sans min-h-screen flex flex-col justify-between bg-[#f4f9f8]"> 
+    <div className="font-sans flex flex-col justify-between"> 
       <BrowserRouter>
         <FormProvider>
           <Quote />

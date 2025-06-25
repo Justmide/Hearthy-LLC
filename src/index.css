@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-sped-mint text-sped-primary font-body;
+    @apply bg-[#cce4ed] text-sped-primary font-body;
   }
 }
 
@@ -13,7 +13,4 @@
     @apply bg-sped-accent text-white hover:bg-sped-highlight transition-colors duration-300;
   }
 
-  .overlay {
-    @apply bg-sped-primary bg-opacity-80;
-  }
 }

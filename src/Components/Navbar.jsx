@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="lg:hidden">
         <button 
           onClick={toggleMenu} 
-          className="text-3xl mt-4 text-gray-700 bg-transparent focus:outline-none"
+          className="text-3xl mt-4 text-gray-700 bg-transparent focus:outline-none hover:bg-transparent"
           aria-label="Toggle menu"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
