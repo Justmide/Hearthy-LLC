@@ -51,16 +51,16 @@ const ContactUs = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-         <iframe
-  title="Google Map"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0190654253286!2d-122.41941548468107!3d37.77492927975986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2f7df7a3%3A0xfec1d1d1b6dcb4b3!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614846600023!5m2!1sen!2sus"
-  width="100%"
-  height="400"
-  allowFullScreen=""
-  loading="lazy"
-  style={{ border: 0 }}
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0190654253286!2d-122.41941548468107!3d37.77492927975986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2f7df7a3%3A0xfec1d1d1b6dcb4b3!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614846600023!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            allowFullScreen=""
+            loading="lazy"
+            style={{ border: 0 }}
+            referrerPolicy="no-referrer-when-downgrade"
+          />
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -118,8 +118,8 @@ const ContactUs = () => {
               {submitState === "submitting"
                 ? "Submitting..."
                 : submitState === "submitted"
-                ? "Submitted ✅"
-                : "Send Message"}
+                  ? "Submitted ✅"
+                  : "Send Message"}
             </button>
           </form>
         </div>
