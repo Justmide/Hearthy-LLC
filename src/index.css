@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply bg-sped-mint text-sped-primary font-body;
+  }
+}
+
+@layer components {
+  button, .btn {
+    @apply bg-sped-accent text-white hover:bg-sped-highlight transition-colors duration-300;
+  }
+
+  .overlay {
+    @apply bg-sped-primary bg-opacity-80;
+  }
+} */
