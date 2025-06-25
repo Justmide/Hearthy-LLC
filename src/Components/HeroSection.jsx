@@ -4,30 +4,35 @@ import { motion, AnimatePresence } from 'framer-motion';
 import heroImg1 from "../assets/Images/studentImg3.jpg";
 import heroImg2 from "../assets/Images/studentImg2.jpg";
 import heroImg3 from "../assets/Images/studentImg1.jpg";
+import { useNavigate } from 'react-router-dom';
 
 export const CarouselDarkVariant = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef(null);
   const intervalRef = useRef(null);
+  const navigate = useNavigate();
   
   const slides = [
     {
       image: heroImg1,
       title: 'Welcome to Hearthy Consulting LLC',
       description: 'Hearthy Consulting champions a collaborative approach to special education. We work alongside schools, families, and communities to foster inclusive learning experiences for students with disabilities',
-      buttonText: 'Explore Services'
+      buttonText: 'Explore Services',
+      link: '/service',
     },
     {
       image: heroImg2,
       title: 'Practical Training for Passionate Educators',
       description: "Transform your teaching with our practical, research-backed workshops and coaching. Perfect for all educators, our training gives you the tools, knowledge, and confidence to support every learner.",
-      buttonText: 'Explore Our Trainings'
+      buttonText: 'Explore Our Trainings',
+      link: '/training',
     },
     {
       image: heroImg3,
       title: 'Inclusive Learning Starts Here',
       description: "Every child deserves engaging, empowering learning. At Hearthy Consulting, we help educators create inclusive classrooms where all students feel valued and supported.",
-      buttonText: 'Join Our Newsletter'
+      buttonText: 'Contact Us',
+      link: '/contact',
     }
   ];
 
@@ -76,6 +81,12 @@ export const CarouselDarkVariant = () => {
     intervalRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
+  };
+
+  const handleButtonClick = (link) => {
+    if (link) {
+      navigate(link, { replace: false });
+    }
   };
 
   return (
@@ -128,12 +139,13 @@ export const CarouselDarkVariant = () => {
                       {slide.description}
                     </motion.p>
                     <motion.button
-                      className="px-6 py-2 bg-[#3A6351] text-white rounded-lg transition-colors hover:bg-[#224D38]"
+                      className="px-6 py-2 bg-[#cce4ed] text-[#000000] rounded-lg hover:bg-sped-highlight transition-colors duration-300"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.6, duration: 0.5 }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      onClick={() => handleButtonClick(slide.link)}
                     >
                       {slide.buttonText}
                     </motion.button>

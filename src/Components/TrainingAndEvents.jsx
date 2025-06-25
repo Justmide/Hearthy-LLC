@@ -27,7 +27,7 @@ const TrainingAndEvents = () => {
             <div className="text-sm pb-2 font-semibold border-b-4 border-primary w-fit lg:mx-0 text-[#000000]">
               🧑🏾‍🏫 TRAINING & DEVELOPMENT
             </div>
-            <div className="pt-4 text-[20px] lg:text-[40px] font-bold leading-snug lg:text-left text-[#000000]">
+            <div className="text-center pt-4 text-[20px] lg:text-[40px] font-bold leading-snug lg:text-left text-[#000000]">
               <p>Empowering Educators & Families Through Training</p>
             </div>
             <div className="text-[15px] text-[#000000] font-medium italic pt-4 lg:text-justify text-center">
@@ -53,7 +53,7 @@ const TrainingAndEvents = () => {
             <div className="lg:text-justify text-[16px] pb-2 font-semibold border-b-4 border-primary w-fit text-[#000000] mb-4">
               🛳️ EVENTS & VACATIONS
             </div>
-            <h2 className="text-[20px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-bold leading-snug text-[#000000]">
+            <h2 className="text-center text-[20px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-bold leading-snug text-[#000000]">
               Celebrate Life Beyond the Classroom
             </h2>
             <div className="text-[15px] text-[#000000] font-medium italic pt-4 leading-relaxed lg:text-justify text-center">

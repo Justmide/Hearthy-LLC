@@ -193,7 +193,7 @@ const ServiceDetails = () => {
                  data-aos="fade-down">If you believe your child may benefit from special education services, or you just have questions, we’re here for you. Reach out today for a confidential consultation with our support team
 </p>
               <button 
-              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-primary rounded-[7px] text-[14px] text-white bg-primary"
+              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-primary rounded-[7px] text-[14px] text-white bg-primary "
               data-aos="fade-down"
               onClick={handleContactUs}>
                 Contact Us

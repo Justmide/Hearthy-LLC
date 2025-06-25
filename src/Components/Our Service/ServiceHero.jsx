@@ -5,7 +5,7 @@ const ServicesHero = () => {
   return (
     <section className="relative w-full overflow-hidden flex items-center justify-center h-[500px]">
       {/* background with overlay */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full blur-[4px]">
         <img
           src={serviceHero}
           alt="special-education-support"
@@ -30,7 +30,7 @@ const ServicesHero = () => {
 
         {/* headline */}
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+          <h1 className="text-[20px] lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
             <span className="text-[#3498db]">Special Education</span> Support Services
           </h1>
           
