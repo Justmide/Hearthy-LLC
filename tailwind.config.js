@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         sped: {
-          primary: '#2C3E50',
-          accent: '#3498DB',
-          highlight: '#055f82',
-          mint: '#A3E4D7',
-          gray: '#7F8C8D',
-          light: '#f4f9f8',
+          primary: '#1877F3', // Facebook blue
+          accent: '#1877F3',
+          highlight: '#1877F3',
+          mint: '#1877F3',
+          gray: '#1877F3',
+          light: '#1877F3',
         }
       },
       fontFamily: {

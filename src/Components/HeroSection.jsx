@@ -139,7 +139,7 @@ export const CarouselDarkVariant = () => {
                       {slide.description}
                     </motion.p>
                     <motion.button
-                      className="px-6 py-2 bg-[#cce4ed] text-[#000000] rounded-lg hover:bg-sped-highlight transition-colors duration-300"
+                      className="px-6 py-2 bg-[#1877F3] text-white rounded-lg hover:bg-[#145db2] transition-colors duration-300"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.6, duration: 0.5 }}

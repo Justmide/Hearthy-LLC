@@ -165,15 +165,15 @@ const ServiceDetails = () => {
            {/* 2box  */}
            <div className="lg:flex-row md:flex-row flex flex-col gap-7 justify-center "
            data-aos="fade-down">
-             <div className="bg-[#cce4ed] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
-              <h3 className="lg:text-xl text-[15px] font-bold text-gray-500 mb-2">Advocacy Services</h3>
-              <p className="lg:text-[16px] text-[12px] font-heading text-primary">
+             <div className="bg-[#1877F3] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center text-white">
+              <h3 className="lg:text-xl text-[15px] font-bold text-white mb-2">Advocacy Services</h3>
+              <p className="lg:text-[16px] text-[12px] font-heading text-white">
                 Expert guidance through IEP processes, parent empowerment, and systemic advocacy for equitable education access.
               </p>
             </div>
-            <div className="bg-[#cce4ed] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center">
-              <h3 className="lg:text-xl text-[15px] font-bold text-gray-500 mb-2">Comprehensive Assessments</h3>
-                <p className="lg:text-[16px] font-heading text-primary text-[12px]">
+            <div className="bg-[#1877F3] p-6 rounded-xl backdrop-blur-sm lg:w-[500px] text-center text-white">
+              <h3 className="lg:text-xl text-[15px] font-bold text-white mb-2">Comprehensive Assessments</h3>
+                <p className="lg:text-[16px] font-heading text-white text-[12px]">
                 Multidisciplinary evaluations to identify learning needs and create targeted intervention plans.
               </p>
             </div>
@@ -188,12 +188,12 @@ const ServiceDetails = () => {
                 💬 Need Help?
               </p>
 
-              <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#cce4ed]">
-                <p className="lg:text-[16px] text-center text-[10px]"
+              <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#1877F3]">
+                <p className="lg:text-[16px] text-center text-[10px] text-white"
                  data-aos="fade-down">If you believe your child may benefit from special education services, or you just have questions, we’re here for you. Reach out today for a confidential consultation with our support team
 </p>
               <button 
-              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-primary rounded-[7px] text-[14px] text-white bg-primary "
+              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-white rounded-[7px] text-[14px] text-white bg-white/10 hover:bg-white/20 border"
               data-aos="fade-down"
               onClick={handleContactUs}>
                 Contact Us
