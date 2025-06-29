@@ -31,14 +31,14 @@ const Navbar = () => {
   };
 
   return (
-<nav className="sticky top-[54px] z-[50] bg-[#F4F9F8] border-b border-gray-200 w-full h-[95px] lg:h-[120px] px-[5%] flex justify-between items-center">
+<nav className="sticky top-[54px] z-[50] bg-[#F4F9F8] border-b border-gray-200 w-full h-[105px] lg:h-[140px] px-[5%] flex justify-between items-center">
 
       {/* Logo */}
-      <div className="logo mt-8">
+      <div className="logo mt-2">
         <img 
           src={logo} 
           alt="logo"
-          className='lg:w-[160px] md:w-[140px] w-[120px]'
+          className='lg:w-[140px] md:w-[140px] w-[90px]'
           loading='lazy' 
           onClick={handleHomePage}
         />
@@ -75,14 +75,14 @@ const Navbar = () => {
       <div className="lg:hidden">
         <button 
           onClick={toggleMenu} 
-          className="text-3xl mt-4 text-gray-700 bg-transparent focus:outline-none hover:bg-transparent"
+          className="text-3xl mt-4 text-[#1877F3] bg-transparent focus:outline-none hover:bg-transparent"
           aria-label="Toggle menu"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Menu with Bounce Animation */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 
