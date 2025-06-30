@@ -5,7 +5,7 @@ const TeachinUS = () => {
   const navigate = useNavigate()
 
   const handleButton = () =>{
-    navigate('/training')
+    window.location.href='https://buy.stripe.com/4gM6oI74EgTd1fNe3u7AI00'
   }
   return (
     <>

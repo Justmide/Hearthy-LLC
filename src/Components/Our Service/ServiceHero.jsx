@@ -7,6 +7,10 @@ const ServicesHero = () => {
   const handleContactUs = () =>{
     navigate('/contact')
   }
+
+   const handleButton = () =>{
+    window.location.href='https://buy.stripe.com/4gM6oI74EgTd1fNe3u7AI00'
+  }
   return (
     <section className="relative w-full overflow-hidden flex items-center justify-center h-[500px]">
       {/* background with overlay */}
@@ -39,7 +43,8 @@ const ServicesHero = () => {
           </p>
           {/* CTA buttons */}
           <div className="flex gap-4 flex-wrap justify-center">
-            <button className="bg-[#1877F3] hover:bg-[#145db2] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg flex items-center text-base">
+            <button className="bg-[#1877F3] hover:bg-[#145db2] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg flex items-center text-base"
+            onClick={handleButton}>
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
