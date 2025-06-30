@@ -17,13 +17,27 @@ const TrainingHero = () =>{
                 <div className="absolute inset-0 bg-black/40"></div> 
               </div>
       
-              <div className="relative z-10 text-center px-4 w-full max-w-5xl mx-auto">
+              <div className="relative z-10 text-center px-4 w-full max-w-5xl mx-auto"
+               data-aos="fade-down">
+        {/* Breadcrumb Navigation */}
+        <nav className="flex items-center justify-center text-white/80 text-sm mb-4">
+          <a href="/" className="hover:text-[#1877F3] transition-colors">
+            Home
+          </a>
+          <span className="mx-2">/</span>
+          <a
+            href="/training"
+            className="hover:text-[#1877F3] transition-colors font-bold"
+          >
+           Training & Events
+          </a>
+        </nav>
                 {/* headline */}
                 <div className="flex flex-col items-center justify-center h-full">
                   <h1 className="text-2xl lg:text-4xl font-bold text-[#1877F3] mb-4 drop-shadow-lg">
-                    <span className="text-[#1877F3]">Training & Events</span>
+                    <span className="text-white">Training & Events</span>
                   </h1>
-                  <p className="text-[#1877F3]/90 text-[15px] md:text-[23px] max-w-2xl mb-8 leading-relaxed">
+                  <p className="text-white text-[15px] md:text-[23px] max-w-2xl mb-8 leading-relaxed">
                     Join our expert-led training sessions and engaging events designed to empower educators, families, and advocates. Learn, connect, and celebrate with the Hearthy community!
                   </p>
                   <button className="bg-[#1877F3] hover:bg-[#145db2] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg flex items-center">

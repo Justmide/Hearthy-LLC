@@ -1,7 +1,12 @@
 import React from 'react';
 import serviceHero from '../../assets/Images/serviceHero.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const ServicesHero = () => {
+  const navigate = useNavigate()
+  const handleContactUs = () =>{
+    navigate('/contact')
+  }
   return (
     <section className="relative w-full overflow-hidden flex items-center justify-center h-[500px]">
       {/* background with overlay */}
@@ -12,24 +17,24 @@ const ServicesHero = () => {
           className="w-full h-full object-cover"
           loading='lazy'
         />
-        {/* White overlay */}
-        <div className="absolute inset-0 bg-white/60"></div> 
+        {/* overlay */}
+        <div className="absolute inset-0 bg-[#F4F9F8]/40"></div> 
       </div>
 
       <div className="relative z-10 text-center px-4 w-full max-w-5xl mx-auto flex flex-col items-center justify-center h-full">
         {/* Service path navigation */}
-        <nav className="flex items-center justify-center text-[#1877F3]/80 text-sm mb-4 gap-2">
-          <a href="/" className="hover:text-[#1877F3] transition-colors underline underline-offset-4">Home</a>
+        <nav className="font-bold flex items-center justify-center text-white text-sm mb-4 gap-2">
+          <a href="/" className="hover:text-[#1877F3] transition-colors">Home</a>
           <span className="mx-2">/</span>
-          <a href="/service" className="hover:text-[#1877F3] transition-colors underline underline-offset-4">Services</a>
+          <a href="/service" className="hover:text-[#1877F3] transition-colors">Services</a>
         </nav>
 
         {/* headline */}
         <div className="flex flex-col items-center">
-          <h1 className="text-[22px] md:text-[32px] lg:text-5xl font-bold text-[#1877F3] mb-4 drop-shadow-lg tracking-tight">
-            <span className="text-[#1877F3]">Special Education</span> Support Services
+          <h1 className="text-[22px] md:text-[32px] lg:text-5xl font-bold text-white mb-4 drop-shadow-lg tracking-tight">
+            <span className="text-black">Special Education</span> Support Services
           </h1>
-          <p className="text-[#1877F3]/90 text-[15px] md:text-[23px] max-w-2xl mb-8 leading-relaxed shadow-sm">
+          <p className="text-white text-[15px] md:text-[23px] max-w-2xl mb-8 leading-relaxed shadow-sm">
             We provide personalized support for students with disabilities through inclusive education, tailored learning plans, and professional therapy services. Our goal is to help every child thrive academically, socially, and emotionally.
           </p>
           {/* CTA buttons */}
@@ -40,7 +45,9 @@ const ServicesHero = () => {
               </svg>
               Schedule Consultation
             </button>
-            <button className="bg-transparent hover:bg-[#1877F3]/10 text-[#1877F3] px-6 py-3 rounded-full font-semibold transition-all duration-300 border-2 border-[#1877F3] flex items-center text-base">
+            <button 
+            onClick={handleContactUs}
+            className="bg-transparent hover:bg-[#1877F3]/10 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 border-2 border-[#1877F3] flex items-center text-base">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>

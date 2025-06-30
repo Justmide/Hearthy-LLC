@@ -55,7 +55,7 @@ const Navbar = () => {
                   location.pathname === item.path
                     ? 'font-bold text-primary'
                     : 'font-normal text-black/50'
-                } hover:text-[#224d38] transition-colors`}
+                } hover:text-black tansition-colors`}
               >
                 {item.name}
               </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 bounce: 0
               }
             }}
-            className="fixed top-[145px] left-0 w-full bg-white shadow-lg z-50 p-6"
+            className="fixed top-[157px] left-0 w-full bg-white shadow-lg z-50 p-6"
           >
             <ul className="flex flex-col gap-6 items-center">
               {navItems.map((item) => (

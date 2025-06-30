@@ -12,7 +12,8 @@ const AboutSection = () => {
           loading='lazy'
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#F4F9F8]/40"></div> {/* Brand-colored overlay */}
+        {/* Brand-colored overlay */}
+        <div className="absolute inset-0 bg-[#F4F9F8]/40"></div> 
       </div>
 
       {/* Centered Content */}
@@ -20,13 +21,13 @@ const AboutSection = () => {
             data-aos="fade-down">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center justify-center text-white/80 text-sm mb-4">
-          <a href="/" className="hover:text-white transition-colors">
+          <a href="/" className="hover:text-[#1877F3] transition-colors">
             Home
           </a>
           <span className="mx-2">/</span>
           <a
             href="/special-education"
-            className="hover:text-white transition-colors font-bold"
+            className="hover:text-[#1877F3] transition-colors font-bold"
           >
             Special Education
           </a>
