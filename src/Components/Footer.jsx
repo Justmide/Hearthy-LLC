@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,18 +35,23 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-4">Quick Links</h3>
-          <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
-            {["About Us", "Our Services", "Training & Events", "Contact Us"].map((link, i) => (
-              <li key={i}>
-                <a
-                  href="#"
-                  className="hover:text-primary hover:translate-x-1 transition-all duration-300 block"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+         <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
+  {[
+    { name: "About Us", path: "/about" },
+    { name: "Our Services", path: "/service" },
+    { name: "Training & Events", path: "/training" },
+    { name: "Contact Us", path: "/contact" },
+  ].map((link, i) => (
+    <li key={i}>
+      <Link
+        to={link.path}
+        className="hover:text-primary hover:translate-x-1 transition-all duration-300 block"
+      >
+        {link.name}
+      </Link>
+    </li>
+  ))}
+</ul>
         </div>
 
         {/* Company */}

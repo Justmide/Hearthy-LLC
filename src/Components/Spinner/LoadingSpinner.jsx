@@ -5,7 +5,7 @@ const LoadingSpinner = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
       <PuffLoader 
-        color="#3A6351" // Use your brand color
+        color="#1877F3" 
         size={80}
         aria-label="Loading Spinner"
       />
