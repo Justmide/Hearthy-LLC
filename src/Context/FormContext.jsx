@@ -8,10 +8,10 @@ export const FormProvider = ({ children }) => {
     try {
       const fullName = `${formData["first-name"]} ${formData["last-name"]}`;
       const templateParams = {
-        name: fullName, // This matches {{name}} in your EmailJS template
+        name: fullName, 
         email: formData.email,
         message: formData.message,
-        time: new Date().toLocaleString(), // Matches {{time}} in your template
+        time: new Date().toLocaleString(), 
       };
 
       const result = await emailjs.send(

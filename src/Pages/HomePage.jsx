@@ -4,33 +4,40 @@ import Hearthy from '../Components/Hearthy'
 import TeachinUS from '../Components/TeachinUS'
 import About from '../Components/Aboutus'
 import TrainingAndEvents from '../Components/TrainingAndEvents'
+import VideoSection from '../Components/VideoSection'
 const HomePage = () => {
   return (
     <>
     {/* HERO SECTION  */}
-    <div>
-   <CarouselDarkVariant />
-    </div>
+  <div>
+  <CarouselDarkVariant />
+</div>
 
-    {/* SECTION TWO */}
-    <div>
-      <About />
-    </div>
+{/* SECTION TWO */}
+<div>
+  <About />
+</div>
 
-    {/* SECTION THREE */}
-    <div>
-      <Hearthy />
-    </div>
+{/* SECTION THREE */}
+<div>
+  <Hearthy />
+</div>
 
-    {/* OUR GOALS/SERVICE */}
-    <div>
-      <TeachinUS />
-    </div>
+{/* VIDEO SECTION */}
+<div>
+  <VideoSection />
+</div>
 
-    {/* TRAINING AND EVENT */}
-    <div>
-      <TrainingAndEvents />
-    </div>
+{/* OUR GOALS/SERVICE */}
+<div>
+  <TeachinUS />
+</div>
+
+{/* TRAINING AND EVENT */}
+<div>
+  <TrainingAndEvents />
+</div>
+
 
     </>
   )

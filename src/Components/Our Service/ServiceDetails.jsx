@@ -188,17 +188,37 @@ const ServiceDetails = () => {
                 💬 Need Help?
               </p>
 
-              <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#1877F3]">
-                <p className="lg:text-[16px] text-center text-[10px] text-white"
-                 data-aos="fade-down">If you believe your child may benefit from special education services, or you just have questions, we’re here for you. Reach out today for a confidential consultation with our support team
-</p>
-              <button 
-              className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-white rounded-[7px] text-[14px] text-white bg-white/10 hover:bg-white/20 border"
-              data-aos="fade-down"
-              onClick={handleContactUs}>
-                Contact Us
-              </button>
-              </div>
+             <div className="flex flex-col justify-center items-center gap-3 h-[160px] mt-7 rounded-[10px] lg:px-[80px] px-[10px] bg-[#1877F3]">
+  <p className="lg:text-[16px] text-center text-[10px] text-white" data-aos="fade-down">
+    If you believe your child may benefit from special education services, or you just have questions, we're here for you. 
+    <br className="hidden sm:block" />
+    Follow us on <a href="https://youtube.com/@spedeveryday9699" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-blue-200">YouTube</a> and <a href="https://instagram.com/spedeveryday" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-blue-200">Instagram</a> for daily tips, success stories, and expert advice on special education!
+  </p>
+  <div className="flex gap-4">
+    <button 
+      className="w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-white rounded-[7px] text-[14px] text-white bg-white/10 hover:bg-white/20 border"
+      data-aos="fade-down"
+      onClick={handleContactUs}>
+      Contact Us
+    </button>
+    <a 
+      href="https://youtube.com/@spedeveryday9699" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-white rounded-[7px] text-[14px] text-white bg-white/10 hover:bg-white/20 border"
+      data-aos="fade-down">
+      Our YouTube
+    </a>
+    <a 
+      href="https://instagram.com/spedeveryday" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center w-[130px] lg:w-[150px] h-[30px] lg:h-[40px] border-white rounded-[7px] text-[14px] text-white bg-white/10 hover:bg-white/20 border"
+      data-aos="fade-down">
+      Our Instagram
+    </a>
+  </div>
+</div>
           </div>
         </div>
       </section>
