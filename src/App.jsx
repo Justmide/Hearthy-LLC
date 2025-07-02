@@ -13,6 +13,7 @@ import PageWrapper from './Components/PageWrapper';
 import TrainingPage from './Pages/TrainingPage';
 import ContactUs from './Pages/ContactUs';
 import { FormProvider } from './Context/FormContext';
+import ConsultationForm from './Pages/ConsultationForm';
 
 
 
@@ -68,6 +69,15 @@ const App = () => {
               element={
                 <PageWrapper>
                   <ContactUs />
+                </PageWrapper>
+              }
+              />
+
+              <Route 
+              path='/client-consultation'
+              element={
+                <PageWrapper>
+                 <ConsultationForm />
                 </PageWrapper>
               }
               />
