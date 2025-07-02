@@ -1,8 +1,7 @@
-import { useRef, useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import emailjs from '@emailjs/browser';
-import { useEmailJS } from '../context/EmailJSContext'; // We'll create this next
+import { useRef, useState } from 'react';
+import { useFormHandler } from '../context/FormContext'; // Reusing your existing context
 
 const consultationOptions = [
   { value: 'special_student', label: 'Special Education Student Support' },
@@ -19,8 +18,7 @@ const validationSchema = yup.object({
 });
 
 const ConsultationForm = () => {
-  const { sendEmail } = useEmailJS();
-  const formRef = useRef();
+  const { submitContactForm } = useFormHandler(); // ✅ Reused
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
@@ -36,35 +34,34 @@ const ConsultationForm = () => {
     onSubmit: async (values) => {
       setIsSubmitting(true);
       setSubmitStatus(null);
-      
-      try {
-        await sendEmail(
-          formRef.current,
-          'your_emailjs_template_id', // Replace with your template ID
-          {
-            name: values.name,
-            email: values.email,
-            phone: values.phone,
-            consultationType: consultationOptions.find(opt => opt.value === values.consultationType)?.label,
-            message: values.message
-          }
-        );
+
+      const fakeFormData = {
+        'first-name': values.name,
+        'last-name': '', // You can extend this if needed
+        email: values.email,
+        message: `Consultation Type: ${
+          consultationOptions.find(opt => opt.value === values.consultationType)?.label
+        }\nPhone: ${values.phone}\n\n${values.message}`
+      };
+
+      const response = await submitContactForm(fakeFormData);
+
+      if (response.success) {
         setSubmitStatus({ success: true, message: 'Thank you! We will contact you soon.' });
         formik.resetForm();
-      } catch (error) {
-        console.error('Failed to send email:', error);
+      } else {
         setSubmitStatus({ success: false, message: 'Failed to send message. Please try again.' });
-      } finally {
-        setIsSubmitting(false);
       }
+
+      setIsSubmitting(false);
     }
   });
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md" style={{ backgroundColor: '#1877F2' }}>
       <h2 className="text-2xl font-bold mb-4 text-white">Schedule a Consultation</h2>
-      
-      <form ref={formRef} onSubmit={formik.handleSubmit} className="space-y-4">
+
+      <form onSubmit={formik.handleSubmit} className="space-y-4">
         {/* Name Field */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-white">Full Name</label>
