@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /client-consultation
+
+Sitemap: https://hearthyconsulting.com/sitemap.xml

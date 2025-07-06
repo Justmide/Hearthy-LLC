@@ -2,6 +2,10 @@ import React from 'react';
 import aboutHero from '../../assets/Images/aboutHero.jpg';
 
 const AboutSection = () => {
+
+  const handleRedirect = () =>{
+    window.location.href='https://buy.stripe.com/4gM6oI74EgTd1fNe3u7AI00'
+  }
   return (
     <section className="relative w-full h-[500px] overflow-hidden flex items-center justify-center">
       {/* Education-focused Background Image with Overlay */}
@@ -46,12 +50,12 @@ const AboutSection = () => {
 
           {/* Action Buttons */}
           <div className="flex gap-4 flex-wrap justify-center">
-            <button className="text-white px-6 py-4 rounded-full text-base font-medium transition-all duration-300 shadow-lg">
+            <button 
+            onClick={handleRedirect}
+            className="text-white px-6 py-4 rounded-full text-base font-medium transition-all duration-300 shadow-lg">
               Explore Training Programs
             </button>
-            <button className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full text-base font-medium transition-all duration-300 backdrop-blur-sm border border-white/20">
-              For Schools & Districts
-            </button>
+          
           </div>
         </div>
       </div>
